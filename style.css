@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    background: lightblue;
+    background-image:
+    linear-gradient(#c8edf5 25%, transparent 25%);
+    background-size: 25px 25px;
+    color:violet;
+    gap: 20px;
+}
+
+#Button {
+    background:#3f7f3f;
+    color:violet;
+    font-size:25px;
+    display: inline-block;
+    padding:10px 40px;
+    border: 3px solid #373737;
+    border-radius: 0px;
+    font-family: monospace;
+    box-shadow: 4px 4px 0 #222;
+    z-index: 1;
+    width: 180px;
+    height:150px;
+}
+
+
+h1 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 #373737;
+}
+
+#noButton {
+    background: #3f7f3f;
+    color: violet;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 3px solid #373737;
+    box-shadow: 3px 3px 0 #373737;
+    font-family: monospace;
+    font-weight: bold;
+    width: 180px;
+    height:150px;
+}
+#noButton:hover {
+    background: #4caf50;
+    color: white;
+    box-shadow:6px 6px 0 #222;
+}
+#Button:hover {
+    background: #4caf50;
+    color: white;
+    box-shadow: 6px 6px 0 #222;
+}
+.buttons {
+    display:flex;
+    gap:10px
+}
+
+.heart1 {
+    left: 30px;
+    position: fixed ;
+    font-size: 50px;
+    color: red;
+    animation: fall 3s linear infinite;
+}
+.heart2 {
+    right:40px;
+    position: fixed;
+    font-size: 50px;
+    color: red;
+    animation:fall 5s linear infinite;
+    z-index: 0;
+}
+.heart3{
+    left:100px;
+    position: fixed;
+    font-size: 50px;
+    color:red;
+    animation: fall 6s linear infinite;
+}
+.bomb1{
+    right: 10px;
+    position: fixed;
+    font-size: 50px;
+    color: red;
+    animation:fall 3.8s linear infinite;
+}
+.bomb2{
+    left:200px;
+    position: fixed;
+    font-size:50px;
+    color: red;
+    animation: fall 5.5s linear infinite;
+}
+    
+
+
+@keyframes fall {
+    0% {
+        top: -60px;
+    }
+
+    100% {
+        top: 100vh;
+    }
+}
+.cat-video {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+

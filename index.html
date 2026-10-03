@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hii idol Ferlyn🤭🤭</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div
+  class="heart1">💗
+  </div>
+  <div
+  class="heart2">💗</div>
+  <div
+  class="heart3">💗</div>
+  <div
+  class="bomb1">💣</div>
+  <div
+  class="bomb2">💣</div>
+  <div
+  class="question-box"
+  id="question-box">
+  <h1>pede kabang maging idol ng buhay ko?😳👀</h1>
+  </div>
+  <div class="buttons" id="buttons">
+  
+  <button id="Button">Yes i❤️🔥</button>
+  <button id="noButton">No😠💔</button>
+  </div>
+  <script>
+    const noButton = document.getElementById("noButton");
+
+    noButton.addEventListener("click", function() {
+        noButton.textContent = "ABA, WALANG BAWIAN😠😠";
+        
+        noButton.style.position = "fixed";
+        noButton.style.zIndex = "10";
+
+        noButton.style.left =
+            Math.random() * (window.innerWidth - noButton.offsetWidth) + "px";
+
+        noButton.style.top =
+            Math.random() * (window.innerHeight - noButton.offsetHeight) + "px";
+    });
+    const yesButton = document.getElementById("Button");
+const questionBox = document.getElementById("question-box");
+
+yesButton.addEventListener("click", function() {
+
+    questionBox.innerHTML = `
+        <h1>YAYYYY 🥳❤️</h1>
+
+        <video class="cat-video" autoplay loop>
+            <source src="ano.mp4" type="video/mp4">
+        </video>
+
+        <audio id="song" autoplay loop>
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+    `;
+    
+    questionBox.style.display = "";
+
+});
+</script>
+</body>
+
+</html>
